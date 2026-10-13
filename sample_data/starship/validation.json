@@ -1,0 +1,13 @@
+{
+  "result": "passed",
+  "samples_per_axis": 230000,
+  "csv_mat_match": true,
+  "all_three_channels_imported": true,
+  "z_peak_g_by_window": {
+    "liftoff": 9.258121332565148,
+    "ignition": 5.55815712378845,
+    "separation": 2.9186468537166106,
+    "failure": 7.020821891369632
+  },
+  "post_failure_115Hz_power_ratio": 112.41053489979875
+}

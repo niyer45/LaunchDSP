@@ -1,0 +1,31 @@
+{
+  "synthetic": true,
+  "sample_rate_hz": 1000,
+  "start_s": -8,
+  "end_s": 141.999,
+  "samples_per_channel": 150000,
+  "acceleration_units": "m/s^2",
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "event_windows_s": [
+    [
+      "Lift-off",
+      0,
+      10
+    ],
+    [
+      "Transonic",
+      35,
+      52
+    ],
+    [
+      "Max q",
+      62,
+      72
+    ]
+  ],
+  "description": "Illustrative random vibration envelopes inspired by the supplied image; not digitized or measured flight data."
+}

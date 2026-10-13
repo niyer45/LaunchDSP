@@ -1,0 +1,53 @@
+{
+  "synthetic": true,
+  "seed": 9302026,
+  "sample_rate_hz": 1000,
+  "samples_per_axis": 230000,
+  "start_s": -20.0,
+  "end_s": 209.999,
+  "acceleration_units": "m/s^2",
+  "signal_type": "Zero-centered local structural vibration; no rigid-body acceleration or gravity baseline.",
+  "events": [
+    {
+      "name": "Lift-off",
+      "time_s": 0
+    },
+    {
+      "name": "Throttle down",
+      "time_s": 45
+    },
+    {
+      "name": "Max q",
+      "time_s": 62
+    },
+    {
+      "name": "Throttle recovery",
+      "time_s": 75
+    },
+    {
+      "name": "Ship ignition",
+      "time_s": 158
+    },
+    {
+      "name": "Stage separation",
+      "time_s": 160
+    },
+    {
+      "name": "Injected Raptor failure",
+      "time_s": 167
+    }
+  ],
+  "throttle_bucket": {
+    "ramp_down_s": [
+      43,
+      48
+    ],
+    "relative_level": 0.6,
+    "recovery_s": [
+      73,
+      80
+    ]
+  },
+  "fault": "Illustrative injected engine-failure shock plus 43 Hz decaying ringing and 115 Hz residual oscillation; not a measured Raptor signature.",
+  "disclaimer": "All event times and amplitudes are scenario assumptions. Not an actual Starship flight reconstruction or validated vehicle response."
+}
