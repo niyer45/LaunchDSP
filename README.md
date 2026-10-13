@@ -8,7 +8,21 @@ Version 6 includes faster startup, a file sidebar, scroll zoom, Home view, PSD h
 
 ![Workspace](docs/FlightSignalExplorer-preview.png)
 
-On macOS, download the version 6 app from the repository’s Releases page and open **Flight Signal Explorer 6.app**. The source works on macOS, Windows, and Linux with Python 3.11 or newer:
+### Standalone Mac app
+
+Download the standalone app from [GitHub Releases](https://github.com/niyer45/flight-signal-explorer/releases). Under **Assets**, choose **Flight-Signal-Explorer-6-macOS-arm64.zip** (approximately 81 MB).
+
+1. Unzip the download.
+2. Move **Flight Signal Explorer 6.app** to your **Applications** folder.
+3. Open the app and import your CSV or MAT recordings.
+
+The standalone build includes Python and its dependencies; you do not need to install Python or MATLAB. This build is for **Apple Silicon Macs (arm64)**. Intel Mac users can run the Python source below. Access to the download requires a GitHub account with permission to view this private repository.
+
+The Mac app is unsigned and not notarized, so macOS may require approval in **System Settings → Privacy & Security** on first launch.
+
+### Run from Python source
+
+The source works on macOS, Windows, and Linux with Python 3.11 or newer:
 
 ```sh
 python -m venv .venv
