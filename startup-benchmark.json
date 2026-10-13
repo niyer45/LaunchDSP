@@ -1,0 +1,55 @@
+{
+  "previous": {
+    "runs": [
+      {
+        "import_seconds": 2.563904416980222,
+        "window_ready_seconds": 2.9815620000008494,
+        "matplotlib_loaded": true,
+        "scipy_loaded": true,
+        "pandas_loaded": true
+      },
+      {
+        "import_seconds": 1.810061167110689,
+        "window_ready_seconds": 2.051068584085442,
+        "matplotlib_loaded": true,
+        "scipy_loaded": true,
+        "pandas_loaded": true
+      },
+      {
+        "import_seconds": 2.386627292027697,
+        "window_ready_seconds": 2.6349967080168426,
+        "matplotlib_loaded": true,
+        "scipy_loaded": true,
+        "pandas_loaded": true
+      }
+    ],
+    "median_seconds": 2.6349967080168426
+  },
+  "updated": {
+    "runs": [
+      {
+        "import_seconds": 0.11441487504635006,
+        "window_ready_seconds": 0.31574383308179677,
+        "matplotlib_loaded": false,
+        "scipy_loaded": false,
+        "pandas_loaded": false
+      },
+      {
+        "import_seconds": 0.11430620809551328,
+        "window_ready_seconds": 0.3070433750981465,
+        "matplotlib_loaded": false,
+        "scipy_loaded": false,
+        "pandas_loaded": false
+      },
+      {
+        "import_seconds": 0.1238182500237599,
+        "window_ready_seconds": 0.31817958399187773,
+        "matplotlib_loaded": false,
+        "scipy_loaded": false,
+        "pandas_loaded": false
+      }
+    ],
+    "median_seconds": 0.31574383308179677
+  },
+  "speedup": 8.345362385380996
+}
