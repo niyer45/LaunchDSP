@@ -1,4 +1,4 @@
-# Flight Signal Explorer
+# LaunchDSP
 
 A standalone desktop app with a Python analysis engine. No MATLAB, browser, cloud account, or server is required. Recordings stay on your computer.
 
@@ -6,14 +6,14 @@ A standalone desktop app with a Python analysis engine. No MATLAB, browser, clou
 
 Version 6 includes faster startup, a file sidebar, scroll zoom, Home view, PSD hover readouts, and log–log PSD plots.
 
-![Workspace](docs/FlightSignalExplorer-preview.png)
+![Workspace](docs/LaunchDSP-preview.png)
 
 ### Standalone Mac app
 
-Download the standalone app from [GitHub Releases](https://github.com/niyer45/flight-signal-explorer/releases). Under **Assets**, choose **Flight-Signal-Explorer-6-macOS-arm64.zip** (approximately 81 MB).
+Download the standalone Mac app from the [Mac app release](https://github.com/niyer45/LaunchDSP/releases/tag/app). Under **Assets**, select **FlightSignalExplorerApp** (approximately 162 MiB). This asset is a ZIP archive; if your browser saves it without an extension, add `.zip` before extracting it.
 
 1. Unzip the download.
-2. Move **Flight Signal Explorer 6.app** to your **Applications** folder.
+2. Move the extracted app to your **Applications** folder. The current release was built before the LaunchDSP rename and still uses **Flight Signal Explorer 6.app** and the earlier branding; source builds now use LaunchDSP.
 3. Open the app and import your CSV or MAT recordings.
 
 The standalone build includes Python and its dependencies; you do not need to install Python or MATLAB. This build is for **Apple Silicon Macs (arm64)**. Intel Mac users can run the Python source below. Access to the download requires a GitHub account with permission to view this private repository.
@@ -81,7 +81,7 @@ Build on the operating system you want to distribute to. PyInstaller does not cr
 
 ```sh
 python -m pip install pyinstaller
-python -m PyInstaller --noconfirm --windowed --name "Flight Signal Explorer" app.py
+python -m PyInstaller --noconfirm --windowed --name "LaunchDSP" app.py
 ```
 
 The macOS build included here is unsigned and built for this Mac's architecture. Distribution to other Macs may require signing/notarization. Windows users can run the source or build the Windows executable using the command above.

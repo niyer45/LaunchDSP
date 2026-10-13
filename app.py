@@ -1,4 +1,4 @@
-"""Flight Signal Explorer: local desktop acceleration analysis."""
+"""LaunchDSP: local desktop acceleration analysis."""
 import sys
 import csv
 from pathlib import Path
@@ -224,7 +224,7 @@ class AnalysisWindow(Q.QMainWindow, Jobs):
         ensure_analysis()
         super().__init__()
         self.rec = rec; self.psd = None; self.spectral = None; self.generation = 0; self.psd_generation = 0
-        self.setWindowTitle('Flight Signal Explorer — ' + rec.name); self.resize(1180, 930)
+        self.setWindowTitle('LaunchDSP — ' + rec.name); self.resize(1180, 930)
         self.setup_jobs()
         root = Q.QWidget(); self.setCentralWidget(root); layout = Q.QVBoxLayout(root); layout.setContentsMargins(16,12,16,12); layout.setSpacing(10)
         title_row = Q.QHBoxLayout(); title_row.addWidget(Q.QLabel('RECORDING'))
@@ -452,11 +452,11 @@ class AnalysisWindow(Q.QMainWindow, Jobs):
 class Library(Q.QMainWindow, Jobs):
     def __init__(self):
         super().__init__(); self.setup_jobs(); self.windows=[]; self.records=[]; self.queue=[]
-        self.setWindowTitle('Flight Signal Explorer'); self.resize(1440,900); self.setMinimumSize(1140,720)
+        self.setWindowTitle('LaunchDSP'); self.resize(1440,900); self.setMinimumSize(1140,720)
         root=Q.QWidget(); self.setCentralWidget(root); layout=Q.QHBoxLayout(root); layout.setContentsMargins(0,0,0,0); layout.setSpacing(0)
         side=Q.QFrame(); side.setObjectName('sidebar'); side.setFixedWidth(272)
         sidebar=Q.QVBoxLayout(side); sidebar.setContentsMargins(20,24,20,20); sidebar.setSpacing(12)
-        heading=Q.QLabel('Flight Signal\nExplorer'); heading.setObjectName('brand'); sidebar.addWidget(heading)
+        heading=Q.QLabel('LaunchDSP'); heading.setObjectName('brand'); sidebar.addWidget(heading)
         subtitle=Q.QLabel('VIBRATION ANALYSIS'); subtitle.setObjectName('section'); sidebar.addWidget(subtitle); sidebar.addSpacing(14)
         self.import_button=Q.QPushButton('+  Import recordings'); self.import_button.setObjectName('primary'); self.import_button.clicked.connect(self.import_files); sidebar.addWidget(self.import_button)
         self.header=Q.QCheckBox('CSV has column headers'); self.header.setChecked(True); sidebar.addWidget(self.header)
@@ -554,7 +554,7 @@ class Library(Q.QMainWindow, Jobs):
 
 
 def main():
-    app=Q.QApplication(sys.argv); app.setApplicationName('Flight Signal Explorer'); configure_style(app)
+    app=Q.QApplication(sys.argv); app.setApplicationName('LaunchDSP'); configure_style(app)
     window=Library(); window.show()
     code=app.exec(); POOL.shutdown(wait=False,cancel_futures=True); sys.exit(code)
 

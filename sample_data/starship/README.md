@@ -1,6 +1,6 @@
 # Starship-style synthetic ascent with injected failure
 
-Illustrative acceleration histories for testing Flight Signal Explorer. This is **local structural vibration about zero**, like the earlier reference plot; it is not trajectory acceleration, thrust-to-mass acceleration, or raw accelerometer specific force including a gravity baseline. No measured Starship telemetry is used.
+Illustrative acceleration histories for testing LaunchDSP. This is **local structural vibration about zero**, like the earlier reference plot; it is not trajectory acceleration, thrust-to-mass acceleration, or raw accelerometer specific force including a gravity baseline. No measured Starship telemetry is used.
 
 ## Import
 
