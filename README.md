@@ -1,6 +1,16 @@
 # LaunchDSP
 
-A standalone desktop app with a Python analysis engine. No MATLAB, browser, cloud account, or server is required. Recordings stay on your computer.
+LaunchDSP analyzes flight acceleration recordings using time histories, spectrograms, and calibrated PSDs. Use the self-contained browser app on a laptop or the Python desktop app. Recordings stay on your computer.
+
+## Browser app — laptop edition
+
+Download [web/LaunchDSP.html](web/LaunchDSP.html) using GitHub's **Download raw file** button and open it in a current laptop browser. No Python, MATLAB, installation, server, or internet connection is needed after download. The same HTML works as a static web page.
+
+The browser workspace includes a file/import sidebar, CSV and supported MAT import, acceleration time history with scroll zoom and Home, full-recording spectrogram, selected-window log–log PSD, nearest-point hover readouts, and PNG/SVG/PSD CSV exports. Use **Print / PDF** for the browser's PDF export.
+
+**Save run .DSP** exports the entire recording library and original samples, titles, units, per-recording analysis settings, selected intervals, zoom views, and active recording. **Open .DSP run** restores it for future reuse or transfer to another laptop. This session format is supported by the browser app; the existing Mac/Python build does not yet import it.
+
+See the [browser guide](web/README.md) for workflow, import compatibility, and the versioned session format, and [browser validation](web/VALIDATION.md) for numerical and UI checks. Chrome on macOS was directly tested; other laptop platforms and browser engines have not been directly tested. All data must fit available browser memory.
 
 ## Run
 
